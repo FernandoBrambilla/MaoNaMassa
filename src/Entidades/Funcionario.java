@@ -40,10 +40,16 @@ public class Funcionario extends Pessoa {
 	}
 
 	public void remover(List<Funcionario> funcionarios, String nome) {
+		Funcionario f = null;
 		for (int i = 0; i < funcionarios.size(); i++) {
 			if (funcionarios.get(i).getNome() == nome) {
+				f = funcionarios.get(i);
 				funcionarios.remove(i);
+				System.out.println("Funcionário " + nome + " removido da lista.");
 			}
+		}
+		if (f == null) {
+			System.out.println("Não foi encontrado funcionário com nome " + nome);
 		}
 	}
 
