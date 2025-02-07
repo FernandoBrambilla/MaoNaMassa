@@ -59,7 +59,7 @@ public class Funcionario extends Pessoa {
 			funcionarios.get(i)
 					.setSalario(f.getSalario().add(f.getSalario().multiply(BigDecimal.valueOf(percentual / 100))));
 		}
-		System.out.println("Lista dos funcionários com o sarlário atualizado: ");
+		System.out.println("Lista dos funcionários com o salário atualizado: ");
 		System.out.println(funcionarios.toString());
 	}
 
