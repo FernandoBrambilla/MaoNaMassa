@@ -26,7 +26,7 @@ public class Main {
 		funcionarios.add(new Funcionario("Heloísa", LocalDate.of(2003,5,24), new BigDecimal(1606.85), Funcao.ELETRICISTA.getDescricao()));
 		funcionarios.add(new Funcionario("Helena", LocalDate.of(1996,9,2), new BigDecimal(2799.93), Funcao.GERENTE.getDescricao()));
 		
-		//REMOVE UM FUNCIONÁRIO, PASSANDO O NOME COMO PARÂMETRO
+		//REMOVE FUNCIONÁRIO, PASSANDO O NOME COMO PARÂMETRO
 		p.remover(funcionarios, "João");
 		
 		
@@ -47,7 +47,7 @@ public class Main {
 		//IMPRIME FUNCIONÁRIO COM A MAIOR IDADE
 		p.imprimirMaiorIdade(funcionarios);
 		
-		//IMPRMIR FUNCIONÁRIOS POR ORDE ALFABETICA
+		//IMPRME FUNCIONÁRIOS POR ORDEM ALFABETICA
 		p.ordenarLista(funcionarios);
 		
 		//IMPRIME O TOTAL DOS SALÁRIOS
